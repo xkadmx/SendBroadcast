@@ -16,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
     public void sendOutBroadcast(View view) {
         Intent I = new Intent();
         I.setAction("com.example.sendbroadcast");
+        I.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
     }
 }
